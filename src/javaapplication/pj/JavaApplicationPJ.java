@@ -31,22 +31,30 @@ public class JavaApplicationPJ {
         frame.setTitle("Samochody");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-       /* JPanel panel = new JPanel(new BorderLayout());
+
+                
+        JMenuBar pasekMenu = new JMenuBar();
+        JMenu menuPolisa = new JMenu("Polisa");
+        
+        JPanel panel = new JPanel(new BorderLayout());
         JLabel label = new JLabel("Imię :");
         label.setDisplayedMnemonic(KeyEvent.VK_N);
         
         JTextField textField = new JTextField();
-        textField.setHorizontalAlignment(JTextField.NORTH);
-        textField.addActionListener(new java.awt.event.ActionListener() {
-
-           
-         public void actionPerformed(ActionEvent e) {
-               JOptionePane.showMessageDialog()
-        });
-        */
-        JMenuBar pasekMenu = new JMenuBar();
-        JMenu menuPolisa = new JMenu("Polisa");
+        textField.setHorizontalAlignment(JTextField.NORTH_EAST);
+        textField.addActionListener(new java.awt.event.ActionListener() {        
+        public void actionPerformed(ActionEvent e) {
+               JOptionPane.showMessageDialog(null, "Witam "+textField.getText() + "!");
+         }});
+        
+        label.setLabelFor(textField);
+        panel.add(label, BorderLayout.WEST);
+        panel.add(textField, BorderLayout.CENTER);
+        pasekMenu.add(textField);
+        
         pasekMenu.add(menuPolisa);
+        
+
          
         JMenuItem opcjaDrukuj = new JMenuItem("Drukuj");
         opcjaDrukuj.addActionListener(new ramka());
@@ -66,6 +74,7 @@ public class JavaApplicationPJ {
         pasekMenu.add(menuWyjscie);
         
         frame.add(pasekMenu, BorderLayout.NORTH);
+        
         frame.setSize(300, 200);
         frame.setVisible(true);
         
