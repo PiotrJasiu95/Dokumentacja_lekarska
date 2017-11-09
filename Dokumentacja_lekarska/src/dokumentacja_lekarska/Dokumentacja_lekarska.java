@@ -16,6 +16,8 @@ public class Dokumentacja_lekarska {
      */
     public static void main(String[] args) {
         // TODO code application logic herejhvkjhvhjkgvhjkgvjcvbvcbcvb
+//        dfgsg
+//                dfg
     }
     
 }
