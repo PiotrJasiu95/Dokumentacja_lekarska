@@ -18,6 +18,7 @@ public class Dokumentacja_lekarska {
         // TODO code application logic herejhvkjhvhjkgvhjkgvjcvbvcbcvb
 //        dfgsg
 //                dfg
+        //fghfgh
     }
     
 }
