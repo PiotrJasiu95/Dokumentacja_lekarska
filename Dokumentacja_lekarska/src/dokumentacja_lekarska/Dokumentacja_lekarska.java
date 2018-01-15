@@ -5,7 +5,6 @@
  */
 package dokumentacja_lekarska;
 
-
 /**
  *
  * @author Piotr
@@ -15,9 +14,8 @@ public class Dokumentacja_lekarska {
     /**
      * @param args the command line arguments
      */
-      
-    public static void main(String[] args){
-        
+    public static void main(String[] args) {
+
         GUI form = new GUI();
         form.setVisible(true);
 
